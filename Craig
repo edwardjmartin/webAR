@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.1/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+
+<script src=”https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src=”https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script src=”https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+<body style=’margin : 0px; overflow: hidden;’>
+  <a-scene embedded arjs=’sourceType: webcam;’>
+      <a-marker preset=’hiro’>
+<a-entity
+      gltf-model-next="src: https://cdn.glitch.com/2c0ddd23-8d1b-408b-97ed-b5b6de683b15%2Fdancing%20craig.glb?v=1574086976306(/path/to/craig.gltf);"
+      >
+      </a-entity>
+      </a-marker>
+  <a-entity camera>
+  </a-entity>
+  </a-scene>
+</body>
+</html>
